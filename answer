@@ -1,0 +1,128 @@
+１．linux在/usr/local/lib/python2.7/site-packages,可以用whereis python或者which python查找。
+２．可以有两种模式：
+       print "%s's name is %s"%(lina,sheryl)
+       print "{0}'s name is {1}".format("lina","sheryl")
+３．username=raw_input("pls input your name:")
+４．help(xxxx), dir(xxxx)
+５．"", #
+６．７个，(+,-,*,//,/,%,**),and, or, not
+７．int,bool,long,float,complex
+８．s="hellworld", "e"=>s[0], hel=>s[:3];a=["a",2]=>a[0];ss={}=>a[0];ss={"a":"1"}, ss["a"]=2
+９．for x,y in enumerate(xx):
+           print "{0}:{1}".format(x,y)
+       for x,y in dica.items():=>for x in dica:print x
+               print "{0}:{1}".format(x,y)
+10.if, for, while=>if xxx:elif xxx;else
+     for xxx in xxx:pass
+    while True:xxx
+11. [x for x in range(1,101) if not x%2]
+1２，１３
+try:
+    d=open("txt","r")
+except IOException,e:
+    print e
+else:
+    for x in d:
+        print x
+     d.close()
+14: class xxx(upper class):
+          def __init__(self,nm):
+              print xxxx
+         def adbsd(self):xxx
+         def adb(self):xxx
+15. int(), str(), type(),len()
+     1._xx不会引用，　__xx__是系统定义函数，__xxx是私有变量
+２.包括７部分：
+a.开头环境定义。b.文档说明;c.变量定义；d.import;e.class;f.def;g.测试
+3.number(int,long,float,bool,complex),string, list,dict,tuple
+
+4.false,0,0.0,None,[],{},(),""
+5. +, *, not in, in
+6.[],[:],[::]
+7.s[::-1]
+8.max, reverse(),len(),sorted(),sum(),enumerate()
+9.a=u"helloworld!"
+  a_unicode=a.encode("utf-8")
+10.dir(xxx), help()
+11.sys.modules; import keyword, keyword.kwlist=;import string, string.digits, string.letters
+－－－－－－－－－－－－1－－－－－－－－－－－－－－
+a={};
+b=dict([1,2],[3,4]);
+b={}.fromkeys((1,2),-1)
+－－－－－－－－－－－－2－－－－－－－－－－－－－－
+for x in a:
+    print x,a[x]; 
+for y in a.items():
+    print x,y
+－－－－－－－－－－－－3－－－－－－－－－－－－－－
+先比较长短，后比较key, 然后是value,如果一样，返回｛０｝
+－－－－－－－－－－－－４－－－－－－－－－－－－－－
+a=(1,2)
+b=(3,4)
+my_d=dict(zip(a,b))
+－－－－－－－－－－－－5－－－－－－－－－－－－－－
+map(lambda x:x+1, [1,2,3]), 像一条产品线把后面的列表里的元素用ｌａｍｂｄａ整个处理一遍
+filter(lambda x:x%2, [100,23,43,10,3])，像一条产品线把后面的列表里的元素用ｌａｍｂｄａ整个处理一遍，但只有值为真的时候才会
+reduce()
+－－－－－－－－－－－－6－－－－－－－－－－－－－－
+f=open(file_name,mode)
+for x in f.readlines():
+    print x
+
+f.write("ddd")
+mode=r,w,a,r+,w+,a+
+模式 	可做操作 	若文件不存在 	是否覆盖
+r 	只能读 	报错 	-
+r+ 	可读可写 	报错 	是
+w 	只能写 	创建 	是
+w+　 	可读可写 	创建
+
+	是
+a　　 	只能写 	创建 	否，追加写
+a+ 	可读可写 	创建 	否，追加写
+－－－－－－－－－－－－7－－－－－－－－－－－－－－
+import sys
+print sys.argv
+print len(sys.argv)
+－－－－－－－－－－－－8－－－－－－－－－－－－－－
+import os
+os.chdir(), os.rename(),os.listdir(),os.mkdir(),os.rmdir(),os.cddir(),os.remove()
+－－－－－－－－－－－－8－－－－－－－－－－－－－－
+f=open("xxx.txt","a+")
+f.tell() 告诉当前的位置，　f.seek(0,0), 定位到某个位置
+f.readlines()读某一行，f.write()向文件写数据
+－－－－－－－－－－－－１－－－－－－－－－－－－－－
+处理系统文件包括删除，remove()
+chdir()改变路径，列出路径listdir();改变权限chmod()
+open(),getcwd()得到当天工作路径
+－－－－－－－－－－－－２－－－－－－－－－－－－－－
+os.path.isabs(), os.path.isfile(), isdir()
+－－－－－－－－－－－－３－－－－－－－－－－－－－－
+try:
+    xxxx
+except Exception,e:
+    xxxx
+else:
+    xxxxx
+finally:
+
+－－－－－－－－－－－－４－－－－－－－－－－－－－－
+with open("/home/user.txt","a+") as f:
+    for x in f:
+        print x
+－－－－－－－－－－－－５－－－－－－－－－－－－－－
+raise xxxx
+－－－－－－－－－－－－6－－－－－－－－－－－－－－
+try:
+    float("3.4")
+except：
+    import sys
+－－－－－－－－－－－－７－－－－－－－－－－－－－－
+def hello(hello):print hello; def po():print helloo
+－－－－－－－－－－－－８－－－－－－－－－－－－－－
+def fabnacci(n):
+    if n==0 or n==1:
+         return n
+    else:
+         return (n*fabnacci(n-1))
+　　
