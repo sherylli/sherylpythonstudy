@@ -125,4 +125,9 @@ def fabnacci(n):
          return n
     else:
          return (n*fabnacci(n-1))
-　　
+　
+ 
+ --------------
+ import xxx
+ from xxx import xxx
+ sys.path.append('/hss/dd/')
